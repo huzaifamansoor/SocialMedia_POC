@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div *ngIf="!isLoading">
+    <h2>KPI Bar</h2>
+    <mat-grid-list cols="4" rowHeight="100px" gutterSize="10px" >
+      <mat-grid-tile *ngFor="let kpi of KPI" >
+        <mat-grid-tile-header> {{kpi.name}} </mat-grid-tile-header>
+        <div class="rating">{{kpi.rating}}</div>
+        <mat-grid-tile-footer> {{kpi.trend}} vs. previous period </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</mat-card>
+

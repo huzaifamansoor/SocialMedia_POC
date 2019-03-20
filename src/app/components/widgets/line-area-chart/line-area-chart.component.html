@@ -1,0 +1,15 @@
+<mat-card>
+  <h2>Review OverTime</h2>
+  <highcharts-chart
+  [Highcharts]="Highcharts"
+
+  [constructorType]="chartConstructor"
+  [options]="chartOptions"
+  [callbackFunction]="chartCallback"
+
+  [(update)]="updateFlag"
+  [oneToOne]="oneToOneFlag"
+  [runOutsideAngular]="runOutsideAngular">
+  </highcharts-chart>
+</mat-card>
+

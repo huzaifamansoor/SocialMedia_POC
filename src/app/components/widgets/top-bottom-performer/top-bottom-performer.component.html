@@ -1,0 +1,45 @@
+<mat-card>
+  <H2>Top 5 Performers</H2>
+    <table mat-table [dataSource]="topPerformerdataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> TOP 5 PERFORMERS </th>
+          <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="rating">
+          <th mat-header-cell *matHeaderCellDef> RATING </th>
+          <td mat-cell *matCellDef="let element"> {{ element.rating }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="response_rate">
+          <th mat-header-cell *matHeaderCellDef> RESPONSE RATE </th>
+          <td mat-cell *matCellDef="let element"> {{element.response_rate}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  <H2>Bottom 5 Performers</H2>
+  <table mat-table [dataSource]="bottomPerformerdataSource" class="mat-elevation-z8" >
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> BOTTOM 5 PERFORMERS </th>
+        <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="rating">
+        <th mat-header-cell *matHeaderCellDef> RATING </th>
+        <td mat-cell *matCellDef="let element"> {{ element.rating }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="response_rate">
+        <th mat-header-cell *matHeaderCellDef> RESPONSE RATE </th>
+        <td mat-cell *matCellDef="let element"> {{element.response_rate}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</mat-card>
