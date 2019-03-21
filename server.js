@@ -1,6 +1,10 @@
 const app = require("./Backend-API/app");
 const debug = require("debug")("node-angular");
 const http = require("http");
+const express = require('express');
+
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 const normalizePort = val => {
   var port = parseInt(val);
@@ -43,7 +47,7 @@ const onListening = () => {
   debug("Listening on " + bind);
 };
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || 8080);
 app.set("port", port);
 
 const server = http.createServer(app);
