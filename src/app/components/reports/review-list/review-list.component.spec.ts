@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LineAreaChartComponent } from './line-area-chart.component';
+import { ReviewListComponent } from './review-list.component';
 
-describe('LineAreaChartComponent', () => {
-  let component: LineAreaChartComponent;
-  let fixture: ComponentFixture<LineAreaChartComponent>;
+describe('ReviewListComponent', () => {
+  let component: ReviewListComponent;
+  let fixture: ComponentFixture<ReviewListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LineAreaChartComponent ]
+      declarations: [ ReviewListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LineAreaChartComponent);
+    fixture = TestBed.createComponent(ReviewListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,34 +1,18 @@
 import { Injectable } from '@angular/core';
-import { TopBottomPerformer } from '../../models/top-bottom-performer.model';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class TopBottomPerformerService {
-
-  constructor() { }
-
-  topPerformer: TopBottomPerformer[] = [];
-  bottomPerformer: TopBottomPerformer[] = [];
+  apiURL = environment.apiUrl ;
+  constructor(private http: HttpClient) { }
 
   getTopPerformer() {
-    this.topPerformer = [
-      {name: 'Comox Valley Toyota', rating: 0, response_rate: '0%'},
-      {name: 'Peroformance Toyota', rating: 0, response_rate: '0%'},
-      {name: 'South Pointe Toyota', rating: 0, response_rate: '0%'},
-      {name: 'Leveille Toyota', rating: 0, response_rate: '0%'},
-      {name: 'Chasse Toyota', rating: 0, response_rate: '0%'},
-    ];
-    return this.topPerformer;
+    return this.http.get(`${this.apiURL}/topbottomperformer/top`);
   }
 
   getBottomPerformer() {
-    this.bottomPerformer = [
-      {name: 'Destination Toyota Burnaby', rating: 1, response_rate: '50%'},
-      {name: 'Don Valley North Toyota', rating: 1, response_rate: '50%'},
-      {name: 'Leveille Toyota', rating: 0, response_rate: '0%'},
-      {name: 'Performance Toyota', rating: 0, response_rate: '0%'},
-      {name: 'South Pointe Toyota', rating: 0, response_rate: '0%'},
-    ];
-    return this.bottomPerformer;
+    return this.http.get(`${this.apiURL}/topbottomperformer/bottom`);
   }
 }

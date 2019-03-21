@@ -1,4 +1,4 @@
-<mat-card>
+<!-- <mat-card>
   <mat-spinner *ngIf="isLoading"></mat-spinner>
   <div *ngIf="!isLoading">
     <h2>KPI Bar</h2>
@@ -10,5 +10,47 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
+</mat-card> -->
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div *ngIf="!isLoading">
+    <h2>KPI Bar</h2>
+    <mat-grid-list cols="4" rowHeight="150px" gutterSize="10px" >
+      <mat-grid-tile *ngFor="let kpi of KPI" >
+        <mat-list>
+          <mat-list-item> <h3> {{kpi.name}} </h3> </mat-list-item>
+          <mat-list-item> <h4> {{kpi.rating}} </h4> </mat-list-item>
+          <mat-list-item> <h6> {{kpi.trend}} vs. previous period </h6> </mat-list-item>
+        </mat-list>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </mat-card>
+<!-- <mat-card>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <div class="custom-grid" *ngIf="isLoading">
+        <div class="grid-item">
+            <h3>test 01</h3>
+            <h3>test 02</h3>
+            <h3>test 03</h3>
+        </div>
+        <div class="grid-item">
+            <h3>test 01</h3>
+            <h3>test 02</h3>
+            <h3>test 03</h3>
+        </div>
+        <div class="grid-item">
+            <h3>test 01</h3>
+            <h3>test 02</h3>
+            <h3>test 03</h3>
+        </div>
+        <div class="grid-item">
+            <h3>test 01</h3>
+            <h3>test 02</h3>
+            <h3>test 03</h3>
+        </div>
+      </div>
+  </mat-card> -->
+
+
 

@@ -9,25 +9,31 @@ import { AngularMaterialModule } from 'src/app/modules/angular-material';
 import { KpiBarComponent } from '../components/widgets/kpi-bar/kpi-bar.component';
 import { HeaderComponent } from '../components/widgets/header/header.component';
 import { TopBottomPerformerComponent } from '../components/widgets/top-bottom-performer/top-bottom-performer.component';
-import { LineAreaChartComponent } from '../components/widgets/line-area-chart/line-area-chart.component';
+import { ReviewsTrendComponent } from '../components/widgets/reviews-trend/reviews-trend.component';
+import { TopReviewsComponent } from '../components/widgets/top-reviews/top-reviews.component';
+
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     KpiBarComponent,
     HeaderComponent,
     TopBottomPerformerComponent,
-    LineAreaChartComponent
+    ReviewsTrendComponent,
+    TopReviewsComponent
   ],
   imports: [
     AngularMaterialModule,
     HighchartsChartModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     KpiBarComponent,
     HeaderComponent,
     TopBottomPerformerComponent,
-    LineAreaChartComponent
+    ReviewsTrendComponent,
+    TopReviewsComponent
   ]
 })
 

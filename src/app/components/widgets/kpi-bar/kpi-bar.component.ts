@@ -16,9 +16,10 @@ export class KpiBarComponent implements OnInit {
 
   ngOnInit() {
     this.isLoading = true;
-    this.KPI = this.kpiService.getKPI();
-    this.isLoading = false;
-    console.log(this.KPI);
+    this.kpiService.getKPI().subscribe((res) => {
+      this.isLoading = false;
+      this.KPI = res as KPI [];
+    });
   }
 
 }

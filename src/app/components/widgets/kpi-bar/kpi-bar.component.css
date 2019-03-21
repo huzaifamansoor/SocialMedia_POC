@@ -2,8 +2,30 @@
   border: 1px solid #ebebe0;
   border-radius: 10px;
 }
+/* .mat-grid-tile .mat-figure {
+  flex-direction: column;
+}
+.mat-card[_ngcontent-c6] {
+  clear: both;
+} */
 
-.rating{
-  padding: 10px;
+
+.mat-spinner
+{
+  width: 100%;
+}
+mat-list-item{
+  text-align: center;
 }
 
+.custom-grid {
+  float: left;
+  width: 100%;
+}
+.custom-grid .grid-item {
+  float: left;
+  width: 24%;
+  margin: 0 0.5%;
+  background: red;
+  border-radius: 10px
+}

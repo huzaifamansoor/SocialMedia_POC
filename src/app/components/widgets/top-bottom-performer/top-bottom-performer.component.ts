@@ -16,10 +16,11 @@ export class TopBottomPerformerComponent implements OnInit {
   constructor(private topBottomPerformService: TopBottomPerformerService) { }
 
   ngOnInit() {
-    this.topPerformerdataSource = this.topBottomPerformService.getTopPerformer();
-    this.bottomPerformerdataSource = this.topBottomPerformService.getBottomPerformer();
-    console.log(this.topPerformerdataSource);
-    console.log(this.bottomPerformerdataSource);
+   this.topBottomPerformService.getTopPerformer().subscribe((res) => {
+     this.topPerformerdataSource = res as TopBottomPerformer[];
+   });
+   this.topBottomPerformService.getBottomPerformer().subscribe((res) => {
+     this.bottomPerformerdataSource = res as TopBottomPerformer[];
+   });
   }
-
 }

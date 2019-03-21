@@ -1,1 +1,11 @@
-<mat-toolbar color="primary">SM Reviews Tracker</mat-toolbar>
+
+<mat-toolbar color="primary">
+  <span><a [routerLink]="['/']" routerLinkActive="mat-accent">SM Reviews Tracker</a></span>
+
+  <span class="spacer"></span>
+  <ul>
+    <li>
+      <a mat-button [routerLink]="['/review-list']">Review List</a>
+    </li>
+  </ul>
+  </mat-toolbar>
