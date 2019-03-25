@@ -10,3 +10,13 @@ table {
 
 
 
+h2{
+  text-align: left;
+}
+h4{
+  text-align: left;
+}
+
+.hideRow{
+  visibility: hidden;
+}

@@ -25,7 +25,8 @@ export class ReviewsTrendComponent implements OnInit {
   runOutsideAngular = false;
   chartOptions = {
     chart: {
-        type: 'spline'
+        type: 'spline',
+        width: 800
     },
     title: {
         text: 'Reviews Over Time'
