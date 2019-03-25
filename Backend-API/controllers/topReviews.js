@@ -24,31 +24,31 @@ const topReviews = [
       }
     ]
   },
-  {
-    network: 'Twitter',
-    reviews: [
-      {
-        username: 'Christina Davis',
-        review: 'The Delearship staff was extremely knowledgable,welcoming and overall a please to deal with.'
-      },
-      {
-        username: 'Lena Tate',
-        review: 'Just purchased my first sports car from Main Street Auto and I Love it!'
-      },
-      {
-        username: 'Cora Foster',
-        review: 'The dealership was exquiste!'
-      },
-      {
-        username: 'David',
-        review: 'The Delearship staff was extremely knowledgable,welcoming and overall a please to deal with.'
-      },
-      {
-        username: 'Shawn',
-        review: 'Just purchased my first sports car from Main Street Auto and I Love it!'
-      }
-    ]
-  },
+  // {
+  //   network: 'Twitter',
+  //   reviews: [
+  //     {
+  //       username: 'Christina Davis',
+  //       review: 'The Delearship staff was extremely knowledgable,welcoming and overall a please to deal with.'
+  //     },
+  //     {
+  //       username: 'Lena Tate',
+  //       review: 'Just purchased my first sports car from Main Street Auto and I Love it!'
+  //     },
+  //     {
+  //       username: 'Cora Foster',
+  //       review: 'The dealership was exquiste!'
+  //     },
+  //     {
+  //       username: 'David',
+  //       review: 'The Delearship staff was extremely knowledgable,welcoming and overall a please to deal with.'
+  //     },
+  //     {
+  //       username: 'Shawn',
+  //       review: 'Just purchased my first sports car from Main Street Auto and I Love it!'
+  //     }
+  //   ]
+  // },
   {
     network: 'Dealer Rater',
     reviews: [
