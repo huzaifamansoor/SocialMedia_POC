@@ -15,6 +15,7 @@ import { SmxFeedComponent } from '../components/widgets/smx-feed/smx-feed.compon
 import { SmxFeedKpiComponent } from '../components/widgets/smx-feed-kpi/smx-feed-kpi.component';
 import { SmxSearchComponent } from '../components/widgets/smx-search/smx-search.component';
 import { SmxKpiComponent } from '../components/widgets/smx-kpi/smx-kpi.component';
+import { TopCommentsComponent } from '../components/widgets/top-comments/top-comments.component';
 
 import { RouterModule } from '@angular/router';
 
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
     SmxFeedComponent,
     SmxFeedKpiComponent,
     SmxSearchComponent,
-    SmxKpiComponent
+    SmxKpiComponent,
+    TopCommentsComponent
   ],
   imports: [
     AngularMaterialModule,
@@ -45,7 +47,8 @@ import { RouterModule } from '@angular/router';
     SmxFeedComponent,
     SmxFeedKpiComponent,
     SmxSearchComponent,
-    SmxKpiComponent
+    SmxKpiComponent,
+    TopCommentsComponent
   ]
 })
 
