@@ -12,11 +12,9 @@ import { WidgetModule } from 'src/app/modules/widget-module';
 import { ReportModule } from 'src/app/modules/report-module';
 
 
-
-
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

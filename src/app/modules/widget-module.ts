@@ -11,6 +11,10 @@ import { HeaderComponent } from '../components/widgets/header/header.component';
 import { TopBottomPerformerComponent } from '../components/widgets/top-bottom-performer/top-bottom-performer.component';
 import { ReviewsTrendComponent } from '../components/widgets/reviews-trend/reviews-trend.component';
 import { TopReviewsComponent } from '../components/widgets/top-reviews/top-reviews.component';
+import { SmxFeedComponent } from '../components/widgets/smx-feed/smx-feed.component';
+import { SmxFeedKpiComponent } from '../components/widgets/smx-feed-kpi/smx-feed-kpi.component';
+import { SmxSearchComponent } from '../components/widgets/smx-search/smx-search.component';
+import { SmxKpiComponent } from '../components/widgets/smx-kpi/smx-kpi.component';
 
 import { RouterModule } from '@angular/router';
 
@@ -20,7 +24,11 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     TopBottomPerformerComponent,
     ReviewsTrendComponent,
-    TopReviewsComponent
+    TopReviewsComponent,
+    SmxFeedComponent,
+    SmxFeedKpiComponent,
+    SmxSearchComponent,
+    SmxKpiComponent
   ],
   imports: [
     AngularMaterialModule,
@@ -33,7 +41,11 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     TopBottomPerformerComponent,
     ReviewsTrendComponent,
-    TopReviewsComponent
+    TopReviewsComponent,
+    SmxFeedComponent,
+    SmxFeedKpiComponent,
+    SmxSearchComponent,
+    SmxKpiComponent
   ]
 })
 

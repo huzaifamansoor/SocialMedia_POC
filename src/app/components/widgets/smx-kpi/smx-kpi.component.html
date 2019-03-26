@@ -1,0 +1,13 @@
+<mat-card>
+  <div *ngIf="!isLoading">
+    <h2>Dashboard  KPI</h2>
+    <mat-grid-list cols="2" rowHeight="150px" gutterSize="10px" >
+      <mat-grid-tile *ngFor="let kpi of SMXKPI" >
+        <mat-list>
+          <mat-list-item> <h3> {{kpi.count}} </h3> </mat-list-item>
+          <mat-list-item> <h4> {{kpi.type}} </h4> </mat-list-item>
+        </mat-list>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</mat-card>
