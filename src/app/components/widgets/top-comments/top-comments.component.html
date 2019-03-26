@@ -1,0 +1,16 @@
+<mat-card>
+  <h2>Top Comments</h2>
+  <mat-tab-group >
+    <mat-tab *ngFor="let item of items" [label]="item.network">
+      <mat-list>
+        <mat-list-item *ngFor="let review of item.reviews">
+          <img  matListAvatar  src="https://support.plymouth.edu/kb_images/Yammer/default.jpeg">
+          <span matLine>{{review.username}}</span>
+          <p matLine>{{ review.review }}</p>
+          <p matLine>Likes: 20  Replies: 25</p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        </mat-list>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

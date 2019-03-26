@@ -1,0 +1,9 @@
+.mat-card{
+  margin: 10px auto;
+  width: 50%;
+  box-align: center;
+}
+
+.mat-list-item{
+  height:auto;
+}
