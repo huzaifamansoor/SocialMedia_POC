@@ -16,7 +16,6 @@ import { SmxFeedKpiComponent } from '../components/widgets/smx-feed-kpi/smx-feed
 import { SmxSearchComponent } from '../components/widgets/smx-search/smx-search.component';
 import { SmxKpiComponent } from '../components/widgets/smx-kpi/smx-kpi.component';
 import { TopCommentsComponent } from '../components/widgets/top-comments/top-comments.component';
-
 import { RouterModule } from '@angular/router';
 
 @NgModule({
