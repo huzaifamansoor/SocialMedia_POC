@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from 'src/app/modules/angular-material';
 import { WidgetModule } from 'src/app/modules/widget-module';
 import { ReportModule } from 'src/app/modules/report-module';
+
 @NgModule({
   declarations: [
     AppComponent,

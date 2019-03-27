@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './components/reports/dashboard/dashboard.component';
-import { ReviewListComponent } from './components/reports/review-list/review-list.component';
+import { DashboardReportComponent } from './components/reports/dashboard-report/dashboard-report.component';
+import { ReviewListReportComponent } from './components/reports/review-list-report/review-list-report.component';
 import { SmxFeedReportComponent } from './components/reports/smx-feed-report/smx-feed-report.component';
 import { SmxSearchReportComponent } from './components/reports/smx-search-report/smx-search-report.component';
-import { SmxDashboardService } from './services/SMXDashboard/smx-dashboard.service';
-import { SocialMediaDashboardComponent } from './components/reports/social-media-dashboard/social-media-dashboard.component';
+import { SocialMediaDashboardReportComponent } from './components/reports/social-media-dashboard-report/social-media-dashboard-report.component';
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent},
-  {path: 'review-list', component: ReviewListComponent},
+  {path: '', component: DashboardReportComponent},
+  {path: 'review-list', component: ReviewListReportComponent},
   {path: 'smx-feed', component: SmxFeedReportComponent},
   {path: 'smx-search', component: SmxSearchReportComponent},
-  {path: 'social-media-dashboard', component: SocialMediaDashboardComponent},
+  {path: 'social-media-dashboard', component: SocialMediaDashboardReportComponent},
 
 ];
 

@@ -8,14 +8,12 @@ import { ReviewListService } from 'src/app/services/ReviewList/review-list.servi
   templateUrl: './review-list.component.html',
   styleUrls: ['./review-list.component.css']
 })
-
 export class ReviewListComponent implements OnInit {
 
-  constructor(private reviewListService: ReviewListService) { }
+  constructor( private reviewListService: ReviewListService ) { }
   displayedColumns: string[] = ['date', 'location', 'rating', 'source', 'summary'];
   reviewlistdataSource: ReviewList[] = [];
   dataSource: any;
-
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   // @ViewChild(MatSort) sort: MatSort;

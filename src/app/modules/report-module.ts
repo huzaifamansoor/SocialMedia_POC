@@ -3,22 +3,22 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 
-import { DashboardComponent } from '../components/reports/dashboard/dashboard.component';
+import { DashboardReportComponent } from '../components/reports/dashboard-report/dashboard-report.component';
 import { WidgetModule } from 'src/app/modules/widget-module';
-import { ReviewListComponent } from '../components/reports/review-list/review-list.component';
+import { ReviewListReportComponent } from '../components/reports/review-list-report/review-list-report.component';
 import { SmxFeedReportComponent } from '../components/reports/smx-feed-report/smx-feed-report.component';
 import { SmxSearchReportComponent } from '../components/reports/smx-search-report/smx-search-report.component';
-import { SocialMediaDashboardComponent } from '../components/reports/social-media-dashboard/social-media-dashboard.component';
+import { SocialMediaDashboardReportComponent } from '../components/reports/social-media-dashboard-report/social-media-dashboard-report.component';
 
 import { AngularMaterialModule } from './angular-material';
 
 @NgModule({
   declarations: [
-    DashboardComponent,
-    ReviewListComponent,
+    DashboardReportComponent,
+    ReviewListReportComponent,
     SmxFeedReportComponent,
     SmxSearchReportComponent,
-    SocialMediaDashboardComponent
+    SocialMediaDashboardReportComponent
   ],
   imports: [
     WidgetModule,
@@ -27,11 +27,11 @@ import { AngularMaterialModule } from './angular-material';
     AngularMaterialModule,
   ],
   exports: [
-    DashboardComponent,
-    ReviewListComponent,
+    DashboardReportComponent,
+    ReviewListReportComponent,
     SmxFeedReportComponent,
     SmxSearchReportComponent,
-    SocialMediaDashboardComponent
+    SocialMediaDashboardReportComponent
   ]
 })
 export class ReportModule { }
